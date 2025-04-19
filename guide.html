@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use Taobao - Complete Guide</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/guide-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Taobao Guide Logo">
+                <h1>Taobao Guide</h1>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="register.html">Registration</a></li>
+                    <li><a href="guide.html" class="active">User Guide</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="language-selector">
+                        <select id="languageSelector">
+                            <option value="en">English</option>
+                            <option value="zh">中文</option>
+                            <option value="es">Español</option>
+                            <option value="ru">Русский</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 data-i18n="guide_title">How to Use Taobao</h1>
+            <p data-i18n="guide_subtitle">Your complete guide to navigating and shopping on Taobao</p>
+        </div>
+    </section>
+
+    <section class="guide-toc">
+        <div class="container">
+            <h2 class="section-title" data-i18n="toc_title">Table of Contents</h2>
+            <div class="toc-container">
+                <ul class="toc-list">
+                    <li><a href="#interface" data-i18n="toc_interface">Understanding the Interface</a></li>
+                    <li><a href="#search" data-i18n="toc_search">Searching for Products</a></li>
+                    <li><a href="#product" data-i18n="toc_product">Understanding Product Pages</a></li>
+                    <li><a href="#cart" data-i18n="toc_cart">Using the Shopping Cart</a></li>
+                    <li><a href="#checkout" data-i18n="toc_checkout">Checkout Process</a></li>
+                    <li><a href="#payment" data-i18n="toc_payment">Payment Methods</a></li>
+                    <li><a href="#shipping" data-i18n="toc_shipping">Shipping Options</a></li>
+                    <li><a href="#tracking" data-i18n="toc_tracking">Order Tracking</a></li>
+                    <li><a href="#communication" data-i18n="toc_communication">Communicating with Sellers</a></li>
+                    <li><a href="#reviews" data-i18n="toc_reviews">Ratings and Reviews</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="interface" class="guide-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="interface_title">Understanding the Taobao Interface</h2>
+            
+            <div class="guide-content">
+                <div class="guide-text">
+                    <h3 data-i18n="interface_home_title">Home Screen Overview</h3>
+                    <p data-i18n="interface_home_desc">When you first open Taobao, you'll see the home screen with various sections. At the top is the search bar, followed by promotional banners, category shortcuts, and recommended products.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="interface_search_title">Search Bar</h4>
+                                <p data-i18n="interface_search_desc">Located at the top of the screen, use this to search for products by keywords.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-th-large"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="interface_categories_title">Categories</h4>
+                                <p data-i18n="interface_categories_desc">Browse products by categories such as clothing, electronics, home goods, etc.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="interface_cart_title">Shopping Cart</h4>
+                                <p data-i18n="interface_cart_desc">Access your shopping cart to review items before checkout.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="interface_profile_title">My Taobao</h4>
+                                <p data-i18n="interface_profile_desc">Access your profile, orders, favorites, and settings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="guide-image">
+                    <img src="images/taobao-interface.jpg" alt="Taobao Interface Overview">
+                    <p class="image-caption" data-i18n="interface_image_caption">Taobao home screen with key areas highlighted</p>
+                </div>
+            </div>
+            
+            <div class="guide-tip">
+                <div class="tip-icon"><i class="fas fa-lightbulb"></i></div>
+                <div class="tip-content">
+                    <h4 data-i18n="interface_tip_title">Pro Tip</h4>
+                    <p data-i18n="interface_tip_content">You can customize your Taobao home screen by following your favorite stores and categories. This will help tailor the recommendations to your preferences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="search" class="guide-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="search_title">Searching for Products</h2>
+            
+            <div class="guide-content">
+                <div class="guide-text">
+                    <h3 data-i18n="search_basics_title">Search Basics</h3>
+                    <p data-i18n="search_basics_desc">Taobao's search function is powerful but can be overwhelming for new users. Here's how to effectively search for products:</p>
+                    
+                    <div class="steps-list">
+                        <div class="step-item">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h4 data-i18n="search_step1_title">Enter Keywords</h4>
+                                <p data-i18n="search_step1_desc">Type relevant keywords in the search bar at the top of the screen. You can search in English, but Chinese keywords often yield better results.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h4 data-i18n="search_step2_title">Apply Filters</h4>
+                                <p data-i18n="search_step2_desc">After searching, use filters to narrow down results by price range, shipping options, seller ratings, etc.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h4 data-i18n="search_step3_title">Sort Results</h4>
+                                <p data-i18n="search_step3_desc">Sort results by price, popularity, sales volume, or newest listings to find what you're looking for faster.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 data-i18n="search_advanced_title">Advanced Search Techniques</h3>
+                    <p data-i18n="search_advanced_desc">To find exactly what you're looking for, try these advanced search techniques:</p>
+                    
+                    <ul class="guide-list">
+                        <li data-i18n="search_advanced_tip1">Use specific terms rather than general ones (e.g., "cotton summer dress" instead of just "dress")</li>
+                        <li data-i18n="search_advanced_tip2">Include sizes, colors, or materials in your search terms</li>
+                        <li data-i18n="search_advanced_tip3">Use the image search feature to find similar products</li>
+                        <li data-i18n="search_advanced_tip4">Check the "Ships to" filter to ensure the item can be shipped to your country</li>
+                    </ul>
+                </div>
+                
+                <div class="guide-image">
+                    <img src="images/taobao-search.jpg" alt="Taobao Search Interface">
+                    <p class="image-caption" data-i18n="search_image_caption">Taobao search results page with filters highlighted</p>
+                </div>
+            </div>
+            
+            <div class="guide-tip">
+                <div class="tip-icon"><i class="fas fa-lightbulb"></i></div>
+                <div class="tip-content">
+                    <h4 data-i18n="search_tip_title">Pro Tip</h4>
+                    <p data-i18n="search_tip_content">Try using Taobao's image search feature by tapping the camera icon in the search bar. You can upload a picture of an item you like, and Taobao will find similar products.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="product" class="guide-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="product_title">Understanding Product Pages</h2>
+            
+            <div class="guide-content">
+                <div class="guide-text">
+                    <h3 data-i18n="product_overview_title">Product Page Overview</h3>
+                    <p data-i18n="product_overview_desc">Product pages on Taobao contain a wealth of information. Here's what to look for:</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-images"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="product_images_title">Product Images</h4>
+                                <p data-i18n="product_images_desc">Swipe through multiple product images. Tap to enlarge for a closer look.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-tag"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="product_price_title">Price Information</h4>
+                                <p data-i18n="product_price_desc">The current price is displayed prominently, often with original price for comparison.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="product_seller_title">Seller Information</h4>
+                                <p data-i18n="product_seller_desc">Check the seller's rating, positive feedback percentage, and how long they've been on Taobao.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="product_shipping_title">Shipping Details</h4>
+                                <p data-i18n="product_shipping_desc">Information about shipping costs, methods, and estimated delivery times.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="product_reviews_title">Customer Reviews</h4>
+                                <p data-i18n="product_reviews_desc">Read reviews from other buyers, often with photos of the actual received items.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 data-i18n="product_options_title">Selecting Product Options</h3>
+                    <p data-i18n="product_options_desc">Many products on Taobao come with various options such as size, color, or style. To select your preferred options:</p>
+                    
+                    <ol class="guide-list numbered">
+                        <li data-i18n="product_options_step1">Tap on the "Select" button or the product image</li>
+                        <li data-i18n="product_options_step2">A popup will appear showing available options</li>
+                        <li data-i18n="product_options_step3">Select your preferred options (size, color, etc.)</li>
+                        <li data-i18n="product_options_step4">Adjust quantity if needed</li>
+                        <li data-i18n="product_options_step5">Tap "Add to Cart" or "Buy Now"</li>
+                    </ol>
+                </div>
+                
+                <div class="guide-image">
+                    <img src="images/taobao-product-page.jpg" alt="Taobao Product Page">
+                    <p class="image-caption" data-i18n="product_image_caption">Taobao product page with key sections highlighted</p>
+                </div>
+            </div>
+            
+            <div class="guide-tip warning">
+                <div class="tip-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                <div class="tip-content">
+                    <h4 data-i18n="product_warning_title">Important Note</h4>
+                    <p data-i18n="product_warning_content">Always check the size charts carefully when buying clothing or shoes. Chinese sizes often run smaller than Western sizes. Look for measurement details in centimeters for the most accurate sizing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="guide-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="cart_title">Using the Shopping Cart</h2>
+            
+            <div class="guide-content">
+                <div class="guide-text">
+                    <h3 data-i18n="cart_overview_title">Shopping Cart Overview</h3>
+                    <p data-i18n="cart_overview_desc">The shopping cart allows you to collect items from different sellers before proceeding to checkout. Here's how to use it effectively:</p>
+                    
+                    <div class="steps-list">
+                        <div class="step-item">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h4 data-i18n="cart_step1_title">Adding Items</h4>
+                                <p data-i18n="cart_step1_desc">On a product page, select your options and tap "Add to Cart" to add an item without immediately checking out.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h4 data-i18n="cart_step2_title">Accessing Your Cart</h4>
+                                <p data-i18n="cart_step2_desc">Tap the shopping cart icon in the bottom navigation bar to view all items in your cart.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h4 data-i18n="cart_step3_title">Managing Items</h4>
+                                <p data-i18n="cart_step3_desc">In your cart, you can adjust quantities, remove items, or save them for later. Items are grouped by seller.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <span class="step-number">4</span>
+                            <div class="step-content">
+                                <h4 data-i18n="cart_step4_title">Selecting Items for Checkout</h4>
+                                <p data-i18n="cart_step4_desc">Check the boxes next to items you want to purchase, then tap "Submit Order" to proceed to checkout.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="guide-image">
+                    <img src="images/taobao-cart.jpg" alt="Taobao Shopping Cart">
+                    <p class="image-caption" data-i18n="cart_image_caption">Taobao shopping cart interface</p>
+                </div>
+            </div>
+            
+            <div class="guide-tip">
+                <div class="tip-icon"><i class="fas fa-lightbulb"></i></div>
+                <div class="tip-content">
+                    <h4 data-i18n="cart_tip_title">Pro Tip</h4>
+                    <p data-i18n="cart_tip_content">Grouping items by seller can help reduce shipping costs. Consider purchasing multiple items from the same seller when possible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="checkout" class="guide-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="checkout_title">Checkout Process</h2>
+            
+            <div class="guide-content">
+                <div class="guide-text">
+                    <h3 data-i18n="checkout_overview_title">Checkout Overview</h3>
+                    <p data-i18n="checkout_overview_desc">The checkout process on Taobao involves several steps. Here's a walkthrough:</p>
+                    
+                    <div class="steps-list">
+                        <div class="step-item">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h4 data-i18n="checkout_step1_title">Shipping Address</h4>
+                                <p data-i18n="checkout_step1_desc">Select or add a shipping address. For international shipping, you may need to use a forwarding service.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h4 data-i18n="checkout_step2_title">Shipping Method</h4>
+                                <p data-i18n="checkout_step2_desc">Choose your preferred shipping method for each seller. Options and costs vary by seller and destination.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h4 data-i18n="checkout_step3_title">Leave a Message (Optional)</h4>
+                                <p data-i18n="checkout_step3_desc">You can leave a message for the seller with special requests or questions.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <span class="step-number">4</span>
+                            <div class="step-content">
+                                <h4 data-i18n="checkout_step4_title">Review Order</h4>
+                                <p data-i18n="checkout_step4_desc">Review your order details, including items, quantities, shipping costs, and total amount.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <span class="step-number">5</span>
+                            <div class="step-content">
+                                <h4 data-i18n="checkout_step5_title">Payment</h4>
+                                <p data-i18n="checkout_step5_desc">Select your payment method and complete the payment to finalize your order.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="guide-image">
+                    <img src="images/taobao-checkout.jpg" alt="Taobao Checkout Process">
+                    <p class="image-caption" data-i18n="checkout_image_caption">Taobao checkout page</p>
+                </div>
+            </div>
+            
+            <div class="guide-tip warning">
+                <div class="tip-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                <div class="tip-content">
+                    <h4 data-i18n="checkout_warning_title">Important Note</h4>
+                    <p data-i18n="checkout_warning_content">For international shipping, you may need to use a forwarding service like Superbuy, Wegobuy, or Basetao. These services provide a Chinese address for your purchases and then forward them to your international address.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="payment" class="guide-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="payment_title">Payment Methods</h2>
+            
+            <div class="guide-content">
+                <div class="guide-text">
+                    <h3 data-i18n="payment_overview_title">Available Payment Options</h3>
+                    <p data-i18n="payment_overview_desc">Taobao offers several payment methods, though some may be limited for international users:</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fab fa-alipay"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="payment_alipay_title">Alipay</h4>
+                                <p data-i18n="payment_alipay_desc">Taobao's preferred payment method. International users can link certain credit cards to Alipay.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="payment_card_title">Credit/Debit Cards</h4>
+                                <p data-i18n="payment_card_desc">Some international cards are accepted, particularly Visa and Mastercard.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="payment_bank_title">Chinese Bank Transfer</h4>
+                                <p data-i18n="payment_bank_desc">Only available for users with Chinese bank accounts.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="payment_agent_title">Payment Agents</h4>
+                                <p data-i18n="payment_agent_desc">Third-party services that can make payments on your behalf for a fee.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 data-i18n="payment_security_title">Payment Security</h3>
+                    <p data-i18n="payment_security_desc">Taobao uses an escrow payment system to protect buyers:</p>
+                    
+                    <ol class="guide-list numbered">
+                        <li data-i18n="payment_security_step1">When you pay, the money is held by Alipay (not immediately given to the seller)</li>
+                        <li data-i18n="payment_security_step2">The seller ships your order after receiving payment confirmation</li>
+                        <li data-i18n="payment_security_step3">You confirm receipt of the items in good condition</li>
+                        <li data-i18n="payment_security_step4">Only then is the payment released to the seller</li>
+                    </ol>
+                </div>
+                
+                <div class="guide-image">
+                    <img src="images/taobao-payment.jpg" alt="Taobao Payment Options">
+                    <p class="image-caption" data-i18n="payment_image_caption">Taobao payment interface</p>
+                </div>
+            </div>
+            
+            <div class="guide-tip">
+                <div class="tip-icon"><i class="fas fa-lightbulb"></i></div>
+                <div class="tip-content">
+                    <h4 data-i18n="payment_tip_title">Pro Tip</h4>
+                    <p data-i18n="payment_tip_content">If you're using a forwarding service, you'll typically pay them directly using international payment methods, and they'll handle the payment to Taobao sellers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="shipping" class="guide-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="shipping_title">Shipping Options</h2>
+            
+            <div class="guide-content">
+                <div class="guide-text">
+                    <h3 data-i18n="shipping_domestic_title">Domestic Shipping in China</h3>
+                    <p data-i18n="shipping_domestic_desc">If you're in China, Taobao offers several domestic shipping options:</p>
+                    
+                    <ul class="guide-list">
+                        <li data-i18n="shipping_domestic_option1">Express Delivery (快递) - Fast delivery, usually 1-3 days</li>
+                        <li data-i18n="shipping_domestic_option2">Standard Delivery (平邮) - Slower but cheaper, usually 3-7 days</li>
+                        <li data-i18n="shipping_domestic_option3">Same-day Delivery (当日达) - Available in some cities for nearby sellers</li>
+                    </ul>
+                    
+                    <h3 data-i18n="shipping_international_title">International Shipping</h3>
+                    <p data-i18n="shipping_international_desc">For international buyers, there are two main approaches:</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="shipping_direct_title">Direct International Shipping</h4>
+                                <p data-i18n="shipping_direct_desc">Some Taobao sellers offer international shipping, but this is relatively rare and may be expensive.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="shipping_agent_title">Forwarding Services</h4>
+                                <p data-i18n="shipping_agent_desc">The most common method for international buyers. These services provide a Chinese warehouse address, consolidate your packages, and ship them internationally.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 data-i18n="shipping_forwarding_title">Popular Forwarding Services</h3>
+                    <p data-i18n="shipping_forwarding_desc">Here are some well-known forwarding services used by international Taobao shoppers:</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Superbuy</h4>
+                                <p>User-friendly interface with English support and good customer service.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Wegobuy</h4>
+                                <p>Similar to Superbuy with competitive shipping rates.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Basetao</h4>
+                                <p>Known for lower service fees and good QC photos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="guide-image">
+                    <img src="images/taobao-shipping.jpg" alt="Taobao Shipping Options">
+                    <p class="image-caption" data-i18n="shipping_image_caption">Shipping options selection screen</p>
+                </div>
+            </div>
+            
+            <div class="guide-tip">
+                <div class="tip-icon"><i class="fas fa-lightbulb"></i></div>
+                <div class="tip-content">
+                    <h4 data-i18n="shipping_tip_title">Pro Tip</h4>
+                    <p data-i18n="shipping_tip_content">When using a forwarding service, consider consolidating multiple packages to save on international shipping costs. Most services offer package consolidation for a small fee.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tracking" class="guide-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="tracking_title">Order Tracking</h2>
+            
+            <div class="guide-content">
+                <div class="guide-text">
+                    <h3 data-i18n="tracking_overview_title">Tracking Your Orders</h3>
+                    <p data-i18n="tracking_overview_desc">Taobao provides comprehensive order tracking. Here's how to track your purchases:</p>
+                    
+                    <div class="steps-list">
+                        <div class="step-item">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h4 data-i18n="tracking_step1_title">Access Orders</h4>
+                                <p data-i18n="tracking_step1_desc">Go to "My Taobao" and tap on "My Orders" to see all your purchases.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h4 data-i18n="tracking_step2_title">Find Your Order</h4>
+                                <p data-i18n="tracking_step2_desc">Orders are organized by status: Awaiting Payment, Awaiting Shipment, Awaiting Delivery, and Completed.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h4 data-i18n="tracking_step3_title">View Tracking Details</h4>
+                                <p data-i18n="tracking_step3_desc">Tap on an order and select "Logistics Information" to see detailed tracking updates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 data-i18n="tracking_status_title">Understanding Order Status</h3>
+                    <p data-i18n="tracking_status_desc">Your order will go through several statuses:</p>
+                    
+                    <ul class="guide-list">
+                        <li data-i18n="tracking_status1">Order Placed - Your order has been submitted but not yet paid</li>
+                        <li data-i18n="tracking_status2">Paid - Payment has been received, waiting for seller to ship</li>
+                        <li data-i18n="tracking_status3">Shipped - Seller has shipped the item</li>
+                        <li data-i18n="tracking_status4">In Transit - Item is on its way to you</li>
+                        <li data-i18n="tracking_status5">Delivered - Item has been delivered</li>
+                        <li data-i18n="tracking_status6">Completed - Transaction is complete after confirmation of receipt</li>
+                    </ul>
+                </div>
+                
+                <div class="guide-image">
+                    <img src="images/taobao-tracking.jpg" alt="Taobao Order Tracking">
+                    <p class="image-caption" data-i18n="tracking_image_caption">Taobao order tracking interface</p>
+                </div>
+            </div>
+            
+            <div class="guide-tip warning">
+                <div class="tip-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                <div class="tip-content">
+                    <h4 data-i18n="tracking_warning_title">Important Note</h4>
+                    <p data-i18n="tracking_warning_content">Taobao has an automatic confirmation of receipt after a certain period (usually 10-15 days). If you haven't received your item by then, make sure to extend the confirmation period.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="communication" class="guide-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="communication_title">Communicating with Sellers</h2>
+            
+            <div class="guide-content">
+                <div class="guide-text">
+                    <h3 data-i18n="communication_overview_title">Messaging System</h3>
+                    <p data-i18n="communication_overview_desc">Taobao has a built-in messaging system called Aliwangwang that allows you to chat with sellers. Here's how to use it:</p>
+                    
+                    <div class="steps-list">
+                        <div class="step-item">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h4 data-i18n="communication_step1_title">Access Chat</h4>
+                                <p data-i18n="communication_step1_desc">On a product page or store page, tap the "Contact Seller" button to start a conversation.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h4 data-i18n="communication_step2_title">Send Messages</h4>
+                                <p data-i18n="communication_step2_desc">Type your message in the chat box. You can also send images or use translation tools.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h4 data-i18n="communication_step3_title">View Chat History</h4>
+                                <p data-i18n="communication_step3_desc">Access all your conversations by going to "My Taobao" and selecting "Messages".</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 data-i18n="communication_tips_title">Communication Tips</h3>
+                    <p data-i18n="communication_tips_desc">When messaging sellers who may not speak your language:</p>
+                    
+                    <ul class="guide-list">
+                        <li data-i18n="communication_tip1">Use simple, clear language</li>
+                        <li data-i18n="communication_tip2">Include product links or order numbers when asking questions</li>
+                        <li data-i18n="communication_tip3">Use Taobao's built-in translation tool or copy messages to an external translator</li>
+                        <li data-i18n="communication_tip4">Be patient - there may be time zone differences and language barriers</li>
+                    </ul>
+                </div>
+                
+                <div class="guide-image">
+                    <img src="images/taobao-chat.jpg" alt="Taobao Chat Interface">
+                    <p class="image-caption" data-i18n="communication_image_caption">Taobao messaging interface</p>
+                </div>
+            </div>
+            
+            <div class="guide-tip">
+                <div class="tip-icon"><i class="fas fa-lightbulb"></i></div>
+                <div class="tip-content">
+                    <h4 data-i18n="communication_tip_title">Pro Tip</h4>
+                    <p data-i18n="communication_tip_content">Save common phrases in Chinese for frequently asked questions, such as "Do you ship internationally?" (您是否提供国际运输?) or "Is this item in stock?" (这个商品有库存吗?).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="guide-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="reviews_title">Ratings and Reviews</h2>
+            
+            <div class="guide-content">
+                <div class="guide-text">
+                    <h3 data-i18n="reviews_overview_title">Understanding the Review System</h3>
+                    <p data-i18n="reviews_overview_desc">Taobao's review system helps buyers make informed decisions and rewards good sellers. Here's how it works:</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="reviews_rating_title">Rating System</h4>
+                                <p data-i18n="reviews_rating_desc">Buyers can rate products on a scale of 1-5 stars for different aspects like product quality, seller service, and shipping speed.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="reviews_comments_title">Written Reviews</h4>
+                                <p data-i18n="reviews_comments_desc">Buyers can leave detailed comments about their experience and upload photos of the received items.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-thumbs-up"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4 data-i18n="reviews_helpful_title">Helpful Votes</h4>
+                                <p data-i18n="reviews_helpful_desc">Users can mark reviews as helpful, which increases their visibility to other shoppers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 data-i18n="reviews_leaving_title">Leaving a Review</h3>
+                    <p data-i18n="reviews_leaving_desc">After receiving and confirming your order, you'll be prompted to leave a review. Here's how:</p>
+                    
+                    <div class="steps-list">
+                        <div class="step-item">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h4 data-i18n="reviews_step1_title">Access Review Page</h4>
+                                <p data-i18n="reviews_step1_desc">Go to "My Orders" and find the order marked "Awaiting Review" or tap the "Review" button on a completed order.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h4 data-i18n="reviews_step2_title">Rate the Product</h4>
+                                <p data-i18n="reviews_step2_desc">Select a star rating for different aspects of your purchase experience.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h4 data-i18n="reviews_step3_title">Write Comments</h4>
+                                <p data-i18n="reviews_step3_desc">Share your thoughts about the product, including pros and cons.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <span class="step-number">4</span>
+                            <div class="step-content">
+                                <h4 data-i18n="reviews_step4_title">Add Photos (Optional)</h4>
+                                <p data-i18n="reviews_step4_desc">Upload photos of the product to help other buyers see the actual item.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <span class="step-number">5</span>
+                            <div class="step-content">
+                                <h4 data-i18n="reviews_step5_title">Submit Review</h4>
+                                <p data-i18n="reviews_step5_desc">Tap "Submit" to publish your review.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="guide-image">
+                    <img src="images/taobao-reviews.jpg" alt="Taobao Review System">
+                    <p class="image-caption" data-i18n="reviews_image_caption">Taobao review submission page</p>
+                </div>
+            </div>
+            
+            <div class="guide-tip">
+                <div class="tip-icon"><i class="fas fa-lightbulb"></i></div>
+                <div class="tip-content">
+                    <h4 data-i18n="reviews_tip_title">Pro Tip</h4>
+                    <p data-i18n="reviews_tip_content">When shopping, look for products with many reviews and photos from buyers. These "real-world" images often give you a better idea of what to expect than the seller's promotional photos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="guide-conclusion">
+        <div class="container">
+            <h2 class="section-title" data-i18n="conclusion_title">Ready to Start Shopping?</h2>
+            <p class="conclusion-text" data-i18n="conclusion_text">Now that you understand how to use Taobao, you're ready to explore China's largest online marketplace. Remember to start with smaller purchases as you get familiar with the platform, and don't hesitate to contact sellers with questions.</p>
+            
+            <div class="cta-buttons">
+                <a href="download.html" class="btn btn-primary" data-i18n="conclusion_download">Download Taobao</a>
+                <a href="faq.html" class="btn btn-secondary" data-i18n="conclusion_faq">View FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-small.png" alt="Taobao Guide">
+                    <p>Your guide to shopping on Taobao</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="guide.html">User Guide</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> help@taobaoguide.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Taobao Guide. All rights reserved.</p>
+                <p>This site is not affiliated with Taobao or Alibaba Group.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/language.js"></script>
+</body>
+</html> 
