@@ -1,43 +1,54 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // 获取语言选择器和所有可翻译元素
-    const languageSelector = document.getElementById('languageSelector');
-    const translatableElements = document.querySelectorAll('[data-i18n]');
+    // 初始化语言
+    const currentLang = localStorage.getItem('language') || 'en';
+    setLanguage(currentLang);
     
-    // 加载翻译数据
-    let translations = {};
+    // 设置语言选择器的当前语言
+    document.getElementById('languageButton').textContent = getLanguageName(currentLang) + ' ';
+    const icon = document.createElement('i');
+    icon.className = 'fas fa-chevron-down';
+    document.getElementById('languageButton').appendChild(icon);
     
-    // 切换语言函数
-    function changeLanguage(lang) {
-        document.documentElement.lang = lang;
-        localStorage.setItem('preferredLanguage', lang);
-        
-        translatableElements.forEach(element => {
-            const key = element.getAttribute('data-i18n');
-            if (translations[lang] && translations[lang][key]) {
-                element.innerHTML = translations[lang][key];
-            }
+    // 语言选择事件监听
+    const langLinks = document.querySelectorAll('.language-dropdown a');
+    langLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const lang = this.getAttribute('data-lang');
+            setLanguage(lang);
+            document.getElementById('languageButton').textContent = getLanguageName(lang) + ' ';
+            const icon = document.createElement('i');
+            icon.className = 'fas fa-chevron-down';
+            document.getElementById('languageButton').appendChild(icon);
         });
-    }
+    });
+});
+
+function setLanguage(lang) {
+    localStorage.setItem('language', lang);
     
-    // 加载翻译文件
-    fetch(`/i18n/${lang}.json`)
+    // 加载语言文件
+    fetch(`i18n/${lang}.json`)
         .then(response => response.json())
         .then(data => {
-            translations[lang] = data;
-            changeLanguage(lang);
-        });
-    
-    // 语言选择器事件监听
-    if (languageSelector) {
-        languageSelector.addEventListener('change', function() {
-            changeLanguage(this.value);
-        });
-    }
-    
-    // 初始化语言
-    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
-    if (languageSelector) {
-        languageSelector.value = savedLanguage;
-    }
-    changeLanguage(savedLanguage);
-}); 
+            // 更新所有带有 data-i18n 属性的元素
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (data[key]) {
+                    element.textContent = data[key];
+                }
+            });
+        })
+        .catch(error => console.error('Error loading language file:', error));
+}
+
+function getLanguageName(code) {
+    const languages = {
+        'en': 'English',
+        'zh': '中文',
+        'es': 'Español',
+        'ru': 'Русский'
+    };
+    return languages[code] || 'English';
+} 

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions - Taobao Guide</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="brand-name">
+                <a href="index.html">Taobao Guide</a>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="register.html">Registration</a></li>
+                    <li><a href="guide.html">User Guide</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="language-selector">
+                        <a href="#" id="languageButton">English <i class="fas fa-chevron-down"></i></a>
+                        <div class="language-dropdown">
+                            <a href="#" data-lang="en">English</a>
+                            <a href="#" data-lang="zh">中文</a>
+                            <a href="#" data-lang="es">Español</a>
+                            <a href="#" data-lang="ru">Русский</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about using Taobao</p>
+        </div>
+    </section>
+
+    <section class="faq-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="general">General</button>
+                <button class="category-tab" data-category="account">Account</button>
+                <button class="category-tab" data-category="payment">Payment</button>
+                <button class="category-tab" data-category="shipping">Shipping</button>
+                <button class="category-tab" data-category="troubleshooting">Troubleshooting</button>
+            </div>
+            
+            <div class="faq-list" id="faqList">
+                <!-- General Questions -->
+                <div class="faq-category active" data-category="general">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is Taobao?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Taobao is China's largest online shopping platform, founded by Alibaba Group. It features millions of products from countless sellers, offering everything from clothing and electronics to home goods and more at competitive prices.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I use Taobao if I don't speak Chinese?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, although Taobao's interface is primarily in Chinese, you can use translation tools like Google Translate or dedicated browser extensions to navigate the site. Some third-party agents also offer English interfaces for shopping on Taobao.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is it safe to shop on Taobao?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Taobao offers buyer protection through its Alipay escrow service, which holds payment until you confirm receipt and satisfaction with your order. However, as with any online marketplace, it's important to check seller ratings and reviews before purchasing.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What's the difference between Taobao and Tmall?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Both are owned by Alibaba Group, but Taobao primarily features individual sellers and small businesses, while Tmall hosts official brand stores and authorized retailers. Tmall generally offers higher-quality products with stronger guarantees but at higher prices.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Account Questions -->
+                <div class="faq-category" data-category="account">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I create a Taobao account?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can create a Taobao account using your email address or phone number. Check our <a href="register.html">Registration Guide</a> for detailed step-by-step instructions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Why am I having trouble registering with my email?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Some international email providers may be blocked in China. If you're having trouble, try using a different email service or registering with your phone number instead.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I reset my password?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>On the login page, click "Forgot Password" and follow the prompts to reset your password using your registered email or phone number. You'll receive a verification code to complete the process.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Payment Questions -->
+                <div class="faq-category" data-category="payment">
+                    <!-- Payment FAQs would go here -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What payment methods does Taobao accept?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Taobao primarily uses Alipay, which accepts Chinese bank cards, some international credit cards, and other local payment methods. International users often need to use a forwarding service that accepts international payments.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is it safe to use my credit card on Taobao?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Alipay, Taobao's payment system, uses encryption and security measures similar to PayPal. However, not all international credit cards are accepted directly. Many international users prefer to use a buying agent service for added security.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Shipping Questions -->
+                <div class="faq-category" data-category="shipping">
+                    <!-- Shipping FAQs would go here -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Does Taobao ship internationally?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Taobao offers direct shipping to some countries in Asia, but for most international destinations, you'll need to use Taobao's consolidated shipping service or a third-party forwarding service.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does shipping take?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Domestic shipping within China typically takes 2-7 days. International shipping can take anywhere from 1-4 weeks depending on your location and the shipping method chosen.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Troubleshooting Questions -->
+                <div class="faq-category" data-category="troubleshooting">
+                    <!-- Troubleshooting FAQs would go here -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>The app keeps crashing. What should I do?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Try these steps: 1) Restart your device, 2) Update the app to the latest version, 3) Clear the app cache in your device settings, 4) Uninstall and reinstall the app. If problems persist, contact us for assistance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>I can't find the product I saw earlier. How can I locate it?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Check your browsing history in the app by going to "My Taobao" > "Footprints". You can also check your favorites if you saved the item. If you remember any keywords from the product, try searching for those terms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="still-have-questions">
+        <div class="container">
+            <h2>Still Have Questions?</h2>
+            <p>If you couldn't find the answer you're looking for, feel free to contact us directly.</p>
+            <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="brand-name">
+                        <a href="index.html">Taobao Guide</a>
+                    </div>
+                    <p>Your guide to shopping on Taobao</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="guide.html">User Guide</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> help@taobaoguide.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Taobao Guide. All rights reserved.</p>
+                <p>This site is not affiliated with Taobao or Alibaba Group.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+</html> 

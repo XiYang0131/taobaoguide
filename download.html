@@ -25,12 +25,13 @@
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li class="language-selector">
-                        <select id="languageSelector">
-                            <option value="en">English</option>
-                            <option value="zh">中文</option>
-                            <option value="es">Español</option>
-                            <option value="ru">Русский</option>
-                        </select>
+                        <a href="#" id="languageButton">English <i class="fas fa-chevron-down"></i></a>
+                        <div class="language-dropdown">
+                            <a href="#" data-lang="en">English</a>
+                            <a href="#" data-lang="zh">中文</a>
+                            <a href="#" data-lang="es">Español</a>
+                            <a href="#" data-lang="ru">Русский</a>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -165,8 +166,39 @@
     </section>
 
     <footer>
-        <!-- 与首页相同的页脚 -->
-        <!-- ... 省略相同代码 ... -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="brand-name">
+                        <a href="index.html">Taobao Guide</a>
+                    </div>
+                    <p>Your guide to shopping on Taobao</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="guide.html">User Guide</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> help@taobaoguide.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Taobao Guide. All rights reserved.</p>
+                <p>This site is not affiliated with Taobao or Alibaba Group.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>

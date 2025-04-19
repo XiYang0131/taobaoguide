@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Use Taobao - Complete Guide</title>
+    <title>Taobao User Guide - Complete Shopping Instructions</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/guide-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -11,9 +11,8 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <img src="images/logo.png" alt="Taobao Guide Logo">
-                <h1>Taobao Guide</h1>
+            <div class="brand-name">
+                <a href="index.html">Taobao Guide</a>
             </div>
             <nav>
                 <button class="menu-toggle" id="menuToggle">
@@ -27,12 +26,13 @@
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li class="language-selector">
-                        <select id="languageSelector">
-                            <option value="en">English</option>
-                            <option value="zh">中文</option>
-                            <option value="es">Español</option>
-                            <option value="ru">Русский</option>
-                        </select>
+                        <a href="#" id="languageButton">English <i class="fas fa-chevron-down"></i></a>
+                        <div class="language-dropdown">
+                            <a href="#" data-lang="en">English</a>
+                            <a href="#" data-lang="zh">中文</a>
+                            <a href="#" data-lang="es">Español</a>
+                            <a href="#" data-lang="ru">Русский</a>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -41,27 +41,55 @@
 
     <section class="page-header">
         <div class="container">
-            <h1 data-i18n="guide_title">How to Use Taobao</h1>
-            <p data-i18n="guide_subtitle">Your complete guide to navigating and shopping on Taobao</p>
+            <h1>Taobao User Guide</h1>
+            <p>Your complete guide to navigating and shopping on Taobao</p>
         </div>
     </section>
 
     <section class="guide-toc">
         <div class="container">
             <h2 class="section-title" data-i18n="toc_title">Table of Contents</h2>
-            <div class="toc-container">
-                <ul class="toc-list">
-                    <li><a href="#interface" data-i18n="toc_interface">Understanding the Interface</a></li>
-                    <li><a href="#search" data-i18n="toc_search">Searching for Products</a></li>
-                    <li><a href="#product" data-i18n="toc_product">Understanding Product Pages</a></li>
-                    <li><a href="#cart" data-i18n="toc_cart">Using the Shopping Cart</a></li>
-                    <li><a href="#checkout" data-i18n="toc_checkout">Checkout Process</a></li>
-                    <li><a href="#payment" data-i18n="toc_payment">Payment Methods</a></li>
-                    <li><a href="#shipping" data-i18n="toc_shipping">Shipping Options</a></li>
-                    <li><a href="#tracking" data-i18n="toc_tracking">Order Tracking</a></li>
-                    <li><a href="#communication" data-i18n="toc_communication">Communicating with Sellers</a></li>
-                    <li><a href="#reviews" data-i18n="toc_reviews">Ratings and Reviews</a></li>
-                </ul>
+            <div class="toc-grid">
+                <a href="#interface" class="toc-item">
+                    <i class="fas fa-desktop"></i>
+                    <span data-i18n="toc_interface">Understanding the Interface</span>
+                </a>
+                <a href="#search" class="toc-item">
+                    <i class="fas fa-search"></i>
+                    <span data-i18n="toc_search">Searching for Products</span>
+                </a>
+                <a href="#product" class="toc-item">
+                    <i class="fas fa-box"></i>
+                    <span data-i18n="toc_product">Understanding Product Pages</span>
+                </a>
+                <a href="#cart" class="toc-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span data-i18n="toc_cart">Using the Shopping Cart</span>
+                </a>
+                <a href="#checkout" class="toc-item">
+                    <i class="fas fa-credit-card"></i>
+                    <span data-i18n="toc_checkout">Checkout Process</span>
+                </a>
+                <a href="#payment" class="toc-item">
+                    <i class="fas fa-wallet"></i>
+                    <span data-i18n="toc_payment">Payment Methods</span>
+                </a>
+                <a href="#shipping" class="toc-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span data-i18n="toc_shipping">Shipping Options</span>
+                </a>
+                <a href="#tracking" class="toc-item">
+                    <i class="fas fa-truck"></i>
+                    <span data-i18n="toc_tracking">Order Tracking</span>
+                </a>
+                <a href="#communication" class="toc-item">
+                    <i class="fas fa-comments"></i>
+                    <span data-i18n="toc_communication">Communicating with Sellers</span>
+                </a>
+                <a href="#reviews" class="toc-item">
+                    <i class="fas fa-star"></i>
+                    <span data-i18n="toc_reviews">Ratings and Reviews</span>
+                </a>
             </div>
         </div>
     </section>
@@ -75,60 +103,16 @@
                     <h3 data-i18n="interface_home_title">Home Screen Overview</h3>
                     <p data-i18n="interface_home_desc">When you first open Taobao, you'll see the home screen with various sections. At the top is the search bar, followed by promotional banners, category shortcuts, and recommended products.</p>
                     
-                    <div class="feature-list">
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-search"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4 data-i18n="interface_search_title">Search Bar</h4>
-                                <p data-i18n="interface_search_desc">Located at the top of the screen, use this to search for products by keywords.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-th-large"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4 data-i18n="interface_categories_title">Categories</h4>
-                                <p data-i18n="interface_categories_desc">Browse products by categories such as clothing, electronics, home goods, etc.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4 data-i18n="interface_cart_title">Shopping Cart</h4>
-                                <p data-i18n="interface_cart_desc">Access your shopping cart to review items before checkout.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4 data-i18n="interface_profile_title">My Taobao</h4>
-                                <p data-i18n="interface_profile_desc">Access your profile, orders, favorites, and settings.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <h3 data-i18n="interface_search_title">Search Bar</h3>
+                    <p data-i18n="interface_search_desc">Located at the top of the screen, use this to search for products by keywords.</p>
+                    
+                    <h3 data-i18n="interface_navigation_title">Navigation Bar</h3>
+                    <p data-i18n="interface_navigation_desc">At the bottom of the screen, you'll find navigation icons for Home, Categories, Messages, Cart, and My Taobao.</p>
                 </div>
                 
                 <div class="guide-image">
-                    <img src="images/taobao-interface.jpg" alt="Taobao Interface Overview">
-                    <p class="image-caption" data-i18n="interface_image_caption">Taobao home screen with key areas highlighted</p>
-                </div>
-            </div>
-            
-            <div class="guide-tip">
-                <div class="tip-icon"><i class="fas fa-lightbulb"></i></div>
-                <div class="tip-content">
-                    <h4 data-i18n="interface_tip_title">Pro Tip</h4>
-                    <p data-i18n="interface_tip_content">You can customize your Taobao home screen by following your favorite stores and categories. This will help tailor the recommendations to your preferences.</p>
+                    <img src="images/taobao-interface.jpg" alt="Taobao Interface">
+                    <p class="image-caption">Taobao home screen with key areas highlighted</p>
                 </div>
             </div>
         </div>
@@ -828,7 +812,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="images/logo-small.png" alt="Taobao Guide">
+                    <div class="brand-name">
+                        <a href="index.html">Taobao Guide</a>
+                    </div>
                     <p>Your guide to shopping on Taobao</p>
                 </div>
                 <div class="footer-links">
